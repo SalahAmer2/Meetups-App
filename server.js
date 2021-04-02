@@ -14,7 +14,7 @@ mongoose.connect('mongodb://localhost/meetup_app', {
 
 mongoose.connection.on('connected', () => {
     console.log('Mongoose is connected!');
-})
+});
 
 //HTTP request logger
 app.use(morgan('tiny'));
